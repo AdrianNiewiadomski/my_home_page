@@ -43,9 +43,9 @@
                 <?php
                     $a = isset($_GET['a'])?intval($_GET['a']):rand(1,3);
 
-                    $names = array('Tworzenie przekrójow obiektow 3D',
-                                   'Korekta wektorow normalnych obiektow 3D',
-                                   'Gra waz napisana w JavaScript');
+                    $names = array('Tworzenie przekrojów obiektów 3D',
+                                   'Korekta wektorów normalnych obiektów 3D',
+                                   'Gra wąż napisana w JavaScript');
 
                     echo '<h1 id="nazwa">'.$names[$a-1].'</h1>';
                  ?>
@@ -106,10 +106,7 @@
             <?php
                 echo 'var nazwy = ["'.implode('","', $names).'"];';
                 echo 'var linki = ["'.implode('","', $links).'"];';
-                $previous = ($a==1)?3:$a-1;
-                echo "var numer = $a;";
-                echo "var poprzedni = $previous;";
-                echo 'setTimeout("ustawSlajd()",4500);';
+                echo 'setTimeout("ustawSlajd('.$a.')",4500);';
              ?>
         </script>
     </body>

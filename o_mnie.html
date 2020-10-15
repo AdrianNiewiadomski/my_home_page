@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Strona domowa Adriana Niewiadomskiego">
+        <meta name="keywords" content="Adrian Niewiadomski, Niewiadomski, Adrian Niewiadomski homepage">
+        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="icon" href="img/favicon.ico" sizes="16x16">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mediaQueries.css">
+        <script src="https://kit.fontawesome.com/64f7cfc6e1.js" crossorigin="anonymous"></script>
+        <script src="js/menu.js" charset="utf-8"></script>
+        <title>Adrian Niewiadomski | O mnie</title>
+    </head>
+    <body>
+        <header class="sticky">
+            <div class="container">
+                <h2><a href="index.html">&lt;<span>AN</span>&gt;</a></h2>
+                <nav>
+                    <label id="ham" for="check">
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                    </label>
+                    <input type="checkbox" id="check">
+                    <ul id="glowne-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active" onclick="przelaczMenu();">
+                            <a>O mnie</a>
+                            <ul id="menu-inside" class="menu-inside">
+                                <li><a href="#" onclick="ukryjMenu();">Wykształcenie</a></li>
+                                <li><a href="#umiejetnosciInformatyczne" onclick="ukryjMenu();">Umiejętności informatyczne</a></li>
+                                <li><a href="#doswiadczenieZawodowe" onclick="ukryjMenu();">Doświadczenie zawodowe</a></li>
+                                <li><a href="#umiejetnosci" onclick="ukryjMenu();">Dodatkowe umiejętności</a></li>
+                                <li><a href="#publikacje" onclick="ukryjMenu();">Publikacje</a></li>
+                                <li><a href="#us" onclick="ukryjMenu();">Praca na Uniwersytecie Śląskim</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="projekty.php">Projekty</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <ul id="menu-outside" class="menu-outside">
+            <li><a href="#" onclick="ukryjMenuZewnetrzne();">Wykształcenie</a></li>
+            <li><a href="#umiejetnosciInformatyczne" onclick="ukryjMenuZewnetrzne();">Umiejętności informatyczne</a></li>
+            <li><a href="#doswiadczenieZawodowe" onclick="ukryjMenuZewnetrzne();">Doświadczenie zawodowe</a></li>
+            <li><a href="#umiejetnosci" onclick="ukryjMenuZewnetrzne();">Dodatkowe umiejętności</a></li>
+            <li><a href="#publikacje" onclick="ukryjMenuZewnetrzne();">Publikacje</a></li>
+            <li><a href="#us" onclick="ukryjMenuZewnetrzne();">Praca na Uniwersytecie Śląskim</a></li>
+        </ul>
+
+        <section id="wyksztalcenie">
+            <div class="container">
+    		    <h1>Wykształcenie</h1>
+
+    			<div class="akapit">
+    				<h2>Studia inżynierskie</h2>
+    				<div class="daty">
+    					2016-2019
+    				</div>
+
+    				<div class="firmy">
+    					Uniwersytet Śląski, Kierunek Informatyka.
+                        <p>Studia ukończone o rok wcześniej na ocenę celującą.</p>
+                        <br/>
+                        Praca inżynierska:
+                        <br/>
+                        „Metody generowania przekrojów pionowych obiektów 3D”.
+                        <a href="download/przekroje.pdf" target="_blank">Pobierz</a><br>
+                        Strona aplikacji: <a href="http://155.158.112.56/~PracaInzAN/" target="_blank">Wyświetl</a><br>
+                        Programowanie w PHP, JavaScript, framework THREE.js.
+    				</div>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>Studia doktoranckie</h2>
+    				<div class="daty">
+    					2010-2015
+    				</div>
+
+    				<div class="firmy">
+    					Uniwersytet Śląski, Kierunek Fizyka,
+
+    					<br/><br/>
+    					Praca doktorska:
+    					<br/>
+    					„Dynamika sieci krystalicznej a pojawianie się ferroelektryczności w	wolframianie bizmutu Bi<span class="sub">2</span>WO<span class="sub">6</span>, niobianie srebra AgNbO<span class="sub">3</span> i&nbsp;roztworach stałych na jego bazie”.
+    					<a href="http://www.sbc.org.pl/Content/222258/doktorat3687.pdf" target="_blank">Pobierz</a>
+    				</div>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>Studia magisterskie</h2>
+    				<div class="daty">
+    					2005-2007
+    				</div>
+
+    				<div class="firmy">
+    					Uniwersytet Śląski, Kierunek Fizyka,
+
+    					<br/><br/>
+    					Praca magisterska z zakresu astrofizyki „Oscylacje i stabilność gwiazd”.
+    					<a href="download/gwiazdy.pdf" target="_blank">Pobierz</a><br>
+                        Wykonywanie obliczeń w programie Maple.
+    				</div>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>Studia licencjackie</h2>
+    				<div class="daty">
+    					2002-2005
+    				</div>
+
+    				<div class="firmy">
+    					Uniwersytet Śląski, Kierunek Fizyka,
+
+    					<br/><br/>
+    					Praca licencjacka z zakresu procesów stochastycznych
+                        „Przejścia indukowane szumem multiplikatywnym”.
+    					<a href="download/szum.pdf" target="_blank">Pobierz</a><br>
+                        Wykonywanie obliczeń w C++.
+    				</div>
+    			</div>
+            </div>
+        </section>
+
+        <section class="umiejetnosci">
+            <div id="umiejetnosciInformatyczne" class="margin"></div>
+            <div class="container">
+
+                <h1>Umiejętności informatyczne</h1>
+
+    			<div class="kolumna">
+                    <div class="daty">
+    					<span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					Python
+    				</div>
+
+    				<div class="daty">
+    					<span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					Java
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					PHP
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					JavaScript
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					C++
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					CSS
+    				</div>
+    			</div>
+
+                <div class="kolumna">
+                    <div class="daty">
+    					<span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					OOP
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					RWD
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					MVC
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					HTML
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					Git
+    				</div>
+
+                    <div class="daty">
+                        <span class="full">&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+    				</div>
+    				<div class="firmy">
+    					SQL
+    				</div>
+                </div>
+
+                <div class="akapit">
+    				<h2>Zrozumienie zagadnień</h2>
+
+    				<p>
+                        Wzorce projektowe: builder, adapter/wrapper, fasada, fabryka</br>
+                        Złożoność obliczeniowa algorytmów</br>
+                        Podstaw Machine Learning</br>
+                        Znajomość podstaw metodyki testowania oprogramowania (m.in. wykonywania testów jednostkowych)
+                    </p>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>Znajomość obsługi</h2>
+    				<p>
+                        Pycharm, InelliJ, Meld, Sublime Merge, Jira, Bitbucket, Xampp, Atom, Ubuntu, FileZilla.
+    				</p>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>Miałem kontakt i mogę szybko wrócić do</h2>
+    				<p>
+                        JavaFX, Laravel 4, silniki szablonowania Blade i Smarty.
+                    </p>
+                    <p>
+                        LabView, Maple, Mathics, Maxima, SAGE, H2O,
+                    </p>
+                    <p>
+                        Eclipse, VirtualBox, Clonezilla, GParted, DOSBox, CEDAR Logic, Aldec Active-HDL, Peakfit, Statistica, Origin, Asembler x86, Dropbox, DiffMerge.
+    				</p>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>Dobra znajomość programów</h2>
+
+    				<p>
+    						Ms Word, Excel, PowerPoint i ich wolnych odpowiedników (Open Office, LibreOffice)
+    				</p>
+    			</div>
+
+                <div class="akapit">
+    				<h2>Kursy</h2>
+
+                    <p>
+    					14.04.2020 - J Garg, Udemy, A Real Time & Hands-On course on Flink.
+                        <a href="download/UC-f3ba9c97-8676-40b2-8729-ea3c9c6057a1.pdf" target="_blank">Pobierz</a><br>
+    				</p>
+
+                    <p>
+    					06.11.2019 - Jonas Schmedtmann, Udemy, Build responsive real world websites with HTML5 and CSS3.
+                        <a href="download/UC-GD5Y3884.pdf" target="_blank">Pobierz</a><br>
+    				</p>
+
+    				<p>
+    					17.08.2018 - Vojislav Kovacevic, Udemy, Laravel 4 Project - Creating a CMS.
+                        <a href="download/UC-JVZVPLGN.pdf" target="_blank">Pobierz</a><br>
+    				</p>
+    			</div>
+            </div>
+        </section>
+
+        <section>
+            <div id="doswiadczenieZawodowe" class="margin"></div>
+            <div class="container">
+                <h1>Doświadczenie zawodowe</h1>
+
+                <div class="akapit">
+                    <h2>Centrum Bezpieczeństwa Cyfrowego (Digital Fingerprints)</h2>
+                    <div class="daty">
+                        12.2019-nadal
+                    </div>
+                    <div class="firmy">
+                        Junior Software Developer<br>
+                        Wytwarzanie oprogramowania i testów jednostkowych, Code review.</br>
+                        Języki Python, Java. Frameworki Flink, podstawy Numpy, Pandas
+                    </div>
+                </div>
+
+                <div class="akapit">
+                    <h2>TEB Edukacja</h2>
+                    <div class="daty">
+                        09.2019-12.2019
+                    </div>
+                    <div class="firmy">
+                        Nauczyciel informatyki<br>
+                        Nauczanie przedmiotów „Oprogramowanie aplikacji internetowych”,
+                        „Witryny i aplikacje internetowe”, „Informatyka rozszerzenie”
+                    </div>
+                </div>
+
+                <div class="akapit">
+                    <h2>Prointegra S.A.</h2>
+                    <div class="daty">
+                        01.2018
+                    </div>
+                    <div class="firmy">
+                        Staż. <br/> Konsultacje dot. machine learning.
+                    </div>
+                </div>
+
+                <div class="akapit">
+    					<h2>SHG Przemysław Kudłacik</h2>
+    					<div class="daty">
+    						12.2017
+    					</div>
+
+    					<div class="firmy">
+    						Praktyka. <br/> Tworzenie strony WWW.
+    					</div>
+    			</div>
+
+    			<div class="akapit">
+    					<h2>Uniwersytet Śląski</h2>
+    					<div class="daty">
+    						10.2014-10.2017
+    					</div>
+
+    					<div class="firmy">
+    						Umowa o pracę na stanowisku naukowo-dydaktycznym. <br/>
+                            Badania naukowe i publikowanie wyników w czasopismach naukowych. <br>
+                            Prowadzenie zajęć dydaktycznych.
+    					</div>
+    			</div>
+
+
+    			<div class="akapit">
+    					<h2>Firma transportowa „Tomasz Bochenek”</h2>
+    					<div class="daty">
+    						03.2010-05.2011
+    					</div>
+
+    					<div class="firmy">
+    						Referent ds. administracyjnych.
+    					</div>
+    			</div>
+
+
+    			<div class="akapit">
+    					<h2>Consensus Support Services Ltd.</h2>
+    					<div class="daty">
+    						07.2009-08.2009
+    					</div>
+
+    					<div class="firmy">
+    						Praca w Wielkiej Brytanii w charakterze opiekuna osób niepełnosprawnych.
+    					</div>
+    			</div>
+
+
+    			<div class="akapit">
+    					<h2>Instytut Meteorologii i Gospodarki Wodnej</h2>
+    					<div class="daty">
+    						07.2008-03.2009
+    					</div>
+
+    					<div class="firmy">
+    						Umowa o pracę na stanowisku specjalisty.<br/>
+    						Opracowywanie modeli jakości powietrza.<br>
+                            Tłumaczenie stron WWW Instytutu na język angielski.
+    					</div>
+    			</div>
+
+
+    			<div class="akapit">
+    					<h2>Powiatowy Zespół ds. Orzekania o Niepełnosprawności w Rybniku</h2>
+    					<div class="daty">
+    						12.2007-05.2008
+    					</div>
+
+    					<div class="firmy">
+    						Staż na stanowisku księgowo – kadrowym.
+    					</div>
+    			</div>
+
+            </div>
+        </section>
+
+	    <section class="umiejetnosci">
+            <div id="umiejetnosci" class="margin"></div>
+            <div class="container">
+                <h1>
+                    Dodatkowe umiejętności
+                </h1>
+
+    			<div class="akapit">
+    				<h2>Język obcy</h2>
+
+    				<p>
+                        Dobra znajomość języka angielskiego w mowie i piśmie potwierdzona publikacjami,
+                        wystąpieniami na konferencjach oraz egzaminem FCE zaliczonym w dniu 10 października
+                        2016 z wynikiem 180/190 punktów.
+                        <a href="download/FCE_StatementOfResult.pdf" target="_blank">Pobierz</a>
+                    </p>
+    			</div>
+
+
+
+    			<div class="akapit">
+    				<h2>Analiza danych</h2>
+
+    				<p>
+    					Znajomość podstaw statystyki, ekonometrii, analizy szeregów czasowych i data miting.
+    				</p>
+    			</div>
+            </div>
+        </section>
+
+	    <section>
+            <div id="publikacje" class="margin"></div>
+            <div class="container">
+                <h1>
+                    Publikacje
+                </h1>
+
+                <div class="akapit">
+    				<h2>“Effects of electric field poling on structural, thermal, vibrational, dielectric and ferroelectric properties of Na<span class="sub">0.5</span>Bi<span class="sub">0.5</span>TiO<span class="sub">3</span> single crystals“</h2>
+
+    				<p>
+    					J.Suchanicz, M.Nowakowska-Malczyk, A.Kania, A.Budziak, K.Kluczewska-Chmielarz, P.Czaja, D.Sitko, M.Sokolowski, A.Niewiadomski, T.V.Kruzina,<br/>
+
+    					Journal of Alloys and Compounds 854 (2021) 157227
+    					<a href="https://www.sciencedirect.com/science/article/abs/pii/S092583882033591X" target="_blank">link</a>
+    				</p>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>“Structural, thermal, dielectric and ferroelectric properties of K<span class="sub">0.5</span>Bi<span class="sub">0.5</span>TiO<span class="sub">3</span> ceramics”</h2>
+
+    				<p>
+    					J. Suchanicz, A. Kania, P. Czaja, A. Budziak, A. Niewiadomski, <br/>
+
+    					Journal of the European Ceramic Society 38 (2017) 567
+    					<a href="https://www.sciencedirect.com/science/article/pii/S0955221917306507" target="_blank">link</a>
+    				</p>
+    			</div>
+
+
+
+    			<div class="akapit">
+    				<h2>“Microstructure and characterization of Ag<span class="sub">1-x</span>Li<span class="sub">x</span>NbO<span class="sub">3</span> ceramics”</h2>
+
+    				<p>
+    					A. Niewiadomski, D. Kajewski, A. Kania, K. Balin, S. Miga, M. Pawlik, J. Koperski,<br/>
+
+    					Ceramics International 42 (2016) 4445.
+    					<a href="http://www.sciencedirect.com/science/article/pii/S0272884215022348" target="_blank">link</a>
+    				</p>
+    			</div>
+
+    			<div class="akapit">
+    				<h2>”Characterization of Bi<span class="sub">2</span>WO<span class="sub">6</span> single crystals by X-ray diffraction, scanning electron microscopy, X-ray photoelectron spectroscopy and optical absorption”</h2>
+
+    				<p>
+    					A. Kania, E. Talik, M. Szubka, W. Ryba-Romanowski, A. Niewiadomski, M. Pawlik, <br/>
+
+    					Journal of Alloys and Compounds 654 (2016) 467.
+    					<a href="http://www.sciencedirect.com/science/article/pii/S0925838815311038" target="_blank">link</a>
+    				</p>
+    			</div>
+
+
+    			<div class="akapit">
+    				<h2>“Dielectric and ferroelectric properties of 0.82K<span class="sub">0.5</span>Bi<span class="sub">0.5</span>TiO<span class="sub">3</span>-0.18PbTiO<span class="sub">3</span> ceramic: effect of uniaxial pressure”</h2>
+
+    				<p>
+    					M. Karpierz, J. Suchanicz, R. Bujakiewicz-Korońska, D. Sitko, A. Niewiadomski, M. Sokolowski, <br/>
+
+    					Phase Transitions 88 (2015) 811.
+    					<a href="http://www.tandfonline.com/doi/abs/10.1080/01411594.2015.1011642" target="_blank">link</a>
+    				</p>
+    			</div>
+
+
+    			<div class="akapit">
+    				<h2>„Raman spectroscopy, dielectric properties and phase transitions of Ag<span class="sub">0.96</span>Li<span class="sub">0.04</span>NbO<span class="sub">3</span> ceramics”</h2>
+
+    				<p>
+    					A. Niewiadomski, A. Kania, G.E. Kugel, M. Hafid, D. Sitko, <br/>
+
+    					Materials Research Bulletin 65 (2015) 123.
+    					<a href="http://www.sciencedirect.com/science/article/pii/S0025540815000604" target="_blank">link</a>
+    				</p>
+    			</div>
+
+
+    			<div class="akapit">
+    				<h2>“Silver deficiency and excess effects on quality, dielectric properties and phase transitions of AgNbO<span class="sub">3</span> ceramics”</h2>
+
+    				<p>
+    					A. Kania, A. Niewiadomski, S. Miga, I. Jankowska-Sumara, M. Pawlik, Z. Ujma, J. Koperski, J. Suchanicz, <br/>
+
+    					Journal of the European Ceramic Society 34 (2014) 1761.
+    					<a href="http://www.sciencedirect.com/science/article/pii/S0955221914000417" target="_blank">link</a>
+    				</p>
+    			</div>
+
+
+    			<div class="akapit">
+    				<h2>“Dielectric and Raman scattering studies of Bi<span class="sub">2</span>WO<span class="sub">6</span> single crystals”</h2>
+
+    				<p>
+    					A. Kania, A. Niewiadomski, G.E. Kugel, <br/>
+
+    					Phase Transitions: A Multinational Journal 86 (2013) 290.
+    					<a href="http://www.tandfonline.com/doi/abs/10.1080/01411594.2012.715295" target="_blank">link</a>
+    				</p>
+    			</div>
+            </div>
+        </section>
+
+	    <section  class="us">
+            <div id="us" class="margin"></div>
+            <div class="container">
+                <h1>
+                    Praca na Uniwersytecie Śląskim
+                </h1>
+
+    			<div class="akapit">
+    				<h2>Osiągnięcia naukowe</h2>
+
+    				<p>
+    					Autor szeregu wystąpień i seminariów naukowych w kraju  i na konferencjach międzynarodowych w dziedzinie fizyki.<br/><br/>
+    					Grant na uczestnictwo w konferencji Fifth European Conference on Crystal Growth oraz First European School on Crystal Growth, Bolonia 2015.<br/><br/>
+    					Wyróżnienie za najlepszy plakat studencki na Sympozium C “Funkcjonalne Perovskity” na konferencji EMRS 2012 Fall Meeting, Politechnika Warszawska, 17-21 września 2012.
+    				</p>
+
+
+    			</div>
+
+    			<div class="akapit">
+    					<h2>Promocja nauki</h2>
+    					<div class="daty">
+    						2011 – nadal
+    					</div>
+
+    					<div class="firmy">
+    						Członek Polskiego Towarzystwa Fizycznego.
+    					</div>
+    			</div>
+
+    			<div class="akapit">
+    					<div class="daty">
+    						2012 – 2015
+    					</div>
+
+    					<div class="firmy">
+    						Organizacja wystaw, pokazów i konkursów popularnonaukowych.
+    						<a href="https://www.youtube.com/watch?v=BKmSByRaR4U">Zobacz&nbsp;wykład</a>
+    					</div>
+    			</div>
+
+    			<div class="akapit">
+    					<div class="daty">
+    						2013
+    					</div>
+
+    					<div class="firmy">
+    						Organizacja konferencji naukowej International Meeting on Ferroelectricity IMF-13, organizowanej wspólnie przez UŚ i Uniwersytet Jagielloński.
+    					</div>
+    			</div>
+
+                <div class="akapit">
+    				<h2>Badania materiałowe</h2>
+
+    				<p>
+    					Analiza widm Ramana, przygotowanie próbek do badań dielektrycznych, termicznych DSC, XRD i zgładów do badań SEM.
+                    </p>
+                    <p>
+    					Znajomość technologii otrzymywania próbek ceramik tlenkowych.<br>
+    					Teoretyczna wiedza nt. hodowli monokryształów.
+    				</p>
+    			</div>
+
+    			<div class="akapit">
+					<h2>Doświadczenie w nauczaniu</h2>
+
+					<div class="firmy">
+							Podstaw technologii informacyjnej, <br/>
+							Podstawy elektroniki i elektrotechniki, <br/>
+							Mechaniki Klasycznej, <br/>
+							I Pracowni Fizycznej
+					</div>
+
+
+			</div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+
+                <a class="icon-big" href="mailto:kontakt@adrianniewiadomski.pl"><i class="far fa-envelope fa-3x"></i></a>
+                <a class="icon-big" href="https://github.com/AdrianNiewiadomski" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                <a class="icon-big" href="https://pl.linkedin.com/in/adrian-niewiadomski-84589356" target="_blank">
+                    <i class="fab fa-linkedin-in fa-3x"></i></a>
+                <a class="icon-big" href="https://www.researchgate.net/profile/A_Niewiadomski" target="_blank"><i class="fab fa-researchgate fa-3x"></i></a>
+
+                <a class="icon-small" href="mailto:kontakt@adrianniewiadomski.pl"><i class="far fa-envelope fa-2x"></i></a>
+                <a class="icon-small" href="https://github.com/AdrianNiewiadomski" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a class="icon-small" href="https://pl.linkedin.com/in/adrian-niewiadomski-84589356" target="_blank">
+                    <i class="fab fa-linkedin-in fa-2x"></i></a>
+                <a class="icon-small" href="https://www.researchgate.net/profile/A_Niewiadomski" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a>
+
+                <p>2019 &copy; Adrian Niewiadomski</p>
+            </div>
+        </footer>
+    </body>
+</html>

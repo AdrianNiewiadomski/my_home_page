@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1000px) {
+    .container{
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#main{
+        margin-top: 0;
+        color:#fff;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network_large.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    section#main h1{
+        font-size: 300%;
+    }
+
+    section#sekcja-projekty .container{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .container{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section#main{
+        margin-top: 0;
+        color:#fff;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network_medium.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    header.sticky{
+        height:90px;
+        min-height: unset !important;
+    }
+    #glowne-menu, section#main nav ul{
+    /* header nav ul{ */
+        display: none;
+    }
+    #ham{
+        float: right;
+        margin-right: 30px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+    #ham:after{
+        content: " ";
+        clear: both;
+    }
+    #ham span{
+        background-color: #fff;
+        display: block;
+
+        margin-bottom: 6px;
+        width: 43px;
+        height: 6px;
+        cursor:pointer;
+        display: block;
+    }
+    #ham span:last-child{
+        margin-bottom: 0;
+    }
+    #check:checked+#glowne-menu{
+        display: block;
+        width: 100%;
+    }
+    header nav li,
+    section#main nav li{
+        float: none;
+        clear: both;
+        width:100%;
+        margin:0;
+        border-radius: 0;
+        border: 0;
+        padding: 0;
+        background-color: #7b3996;
+    }
+    section#main nav li{
+        margin-left: auto;
+        width:30%;
+        text-align: right;
+    }
+
+    header nav li:hover{
+        background-color: #9b59b6;
+    }
+
+    section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    section.umiejetnosci .kolumna,
+    section .daty,
+    section .firmy{
+        float: none;
+        width: 100%;
+    }
+    section.umiejetnosci .kolumna .daty,
+    section.umiejetnosci .kolumna .firmy {
+        float: left;
+        width: 50%;
+    }
+
+    section#kontakt .daty{
+        text-align: left;
+    }
+    section#kontakt a{
+        padding-left: 0;
+    }
+
+
+    section#sekcja-projekty span {
+    	margin-left: 30px;
+    	margin-right: 30px;
+    }
+
+    #info {
+        margin-bottom: 0;
+    }
+    #info a.icon-big{
+        display: none;
+    }
+    #info a.icon-small{
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #fff;
+    }
+    #info p {
+        margin-top: 5px;
+        font-size: 100%;
+        line-height: 150%;
+    }
+
+    footer a.icon-big{
+        display:none;
+    }
+    footer a.icon-small{
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #fff;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    section#main{
+        margin-top: 0;
+        color:#fff;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network_small.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    section#main h1{
+        font-size: 250%;
+    }
+    section#main nav li {
+        margin-left: auto;
+        width: 50%;
+        text-align: right;
+    }
+
+    section#sekcja-projekty span {
+    	margin-left: 10px;
+    	margin-right: 10px;
+    }
+}

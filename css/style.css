@@ -1,0 +1,419 @@
+/*
+    *** ametyst: #9b59b6;  - uzyc tego
+    wiseria #8e44ad;
+    gold: #FFD700;
+    midnightblue: #2c3e50;
+    #e67e22;
+ */
+
+/* --------------------------------------------------------------------
+    Globalne
+-------------------------------------------------------------------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif, Arial;
+    /* font-family: Arial, sans-serif; */
+    font-size: 20px;
+    font-weight: 300;
+}
+body{
+    /* background-color: #ee8; */
+    /* background-color: #eee; */
+    /* background-color: #ddd; */
+    /* background-color: #ccc; */
+}
+.container{
+    width:80%;
+    margin: auto;
+    overflow:hidden;
+}
+/*  czcionka w indeksie dolnym  */
+span.sub{
+    vertical-align: sub;
+    font-size: 80%;
+}
+.margin{
+    height:90px;
+}
+
+/* --------------------------------------------------------------------
+    O mnie
+-------------------------------------------------------------------- */
+ header{
+    color:#fff;
+    background-color:#000;
+    min-height: 90px;
+
+ }
+.sticky{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+section{
+    margin-top: 50px;
+}
+section#wyksztalcenie{
+    margin-top: 50px;
+}
+section h1{
+    font-size: 200%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #9b59b6;
+    clear: both;
+}
+section h2{
+    font-size: 150%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: both;
+    font-weight: 400;
+}
+section p{
+    margin-bottom: 20px;
+    line-height: 200%;
+}
+section .daty{
+    float: left;
+    width: 30%;
+    line-height: 200%;
+}
+section .firmy{
+    float: left;
+    width: 70%;
+    margin-bottom: 30px;
+    line-height: 200%;
+}
+section .firmy a,
+section p a{
+    padding:5px;
+    border: 1px solid #9b59b6;
+    background-color: #9b59b6;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+section .firmy a:hover,
+section p a:hover{
+    color: #fff;
+    background-color:#e67e22 ;
+    border: 1px solid #e67e22;
+}
+
+
+/* --------------------------------------------------------------------
+    umiejetnosci
+-------------------------------------------------------------------- */
+section.umiejetnosci {
+    margin-top: 50px;
+    background-color: #9b59b6;
+    color: #fff;
+    padding-bottom: 20px;
+ }
+ section.umiejetnosci h1{
+    border-bottom: 3px solid #e67e22;
+    padding-top: 50px;
+ }
+section.umiejetnosci h2{
+    margin-top: 40px;
+    font-weight: 400;
+}
+section.umiejetnosci p{
+    margin-bottom: 20px;
+    line-height: 200%;
+}
+section.umiejetnosci .kolumna{
+    float: left;
+    width: 50%;
+    padding-left: 10%;
+    padding-bottom: 30px;
+}
+section.umiejetnosci .daty,
+section.umiejetnosci .firmy{
+    width: 50%;
+}
+section.umiejetnosci span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    float:left;
+    margin-left:20px;
+    margin-top: 17px;
+}
+section.umiejetnosci span.full{
+    background-color:#e67e22 ;
+}
+section.umiejetnosci a{
+    padding:5px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+section.umiejetnosci a:hover{
+    color: #fff;
+    background-color:#e67e22;
+    border: 1px solid #e67e22;
+}
+footer{
+    color:#fff;
+    background-color:#000;
+    min-height: 120px;
+    text-align:center;
+    padding-top: 20px;
+    line-height: 200%;
+}
+footer a.icon-big{
+    color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+footer a.icon-small{
+    display: none;
+}
+/* --------------------------------------------------------------------
+    sekcja us
+-------------------------------------------------------------------- */
+section.us{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/pokaz.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* --------------------------------------------------------------------
+    strona projekty
+-------------------------------------------------------------------- */
+section#sekcja-projekty .container{
+/* #slajder{ */
+    /* height: 900px; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+section#sekcja-projekty #slajder,
+section#sekcja-projekty #slajder img{
+     /* img{ */
+    /* width:100%; */
+    display: block;
+    /* height: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    /* background-size: cover; /* Resize the background image to cover the entire container */ */
+}
+
+section#sekcja-projekty .menu{
+    position: absolute;
+    /* margin-top: 20px; */
+    top: 93%;
+    left: 50%;
+    transform:translate(-50%, 0);
+}
+section#sekcja-projekty a.dot{
+    background-color: #aaa;
+    display:block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    float:left;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+section#sekcja-projekty a.dot:hover,
+section#sekcja-projekty a.dot.activeButton{
+    background-color: #ccc;
+}
+section#sekcja-projekty a.button{
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color:  #9b59b6;
+    border: 1px solid #9b59b6;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 200%;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+section#sekcja-projekty a:hover{
+    background-color:  #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+/* --------------------------------------------------------------------
+    strona kontakt
+-------------------------------------------------------------------- */
+section#kontakt{
+    margin-bottom: 50px;
+}
+section#kontakt .daty{
+    text-align: right;
+    padding-right: 40px;
+}
+section#kontakt a{
+    background-color: transparent;
+    border: none;
+    /* color: #9b59b6; */
+}
+section#kontakt a:hover{
+    color: #e67e22;
+}
+/* --------------------------------------------------------------------
+    strona home
+-------------------------------------------------------------------- */
+section#main{
+    margin-top: 0;
+    color:#fff;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+section#main h1{
+    /* position: absolute; */
+    position: fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    /* text-shadow: 0px 0px 30px #000; */
+    text-shadow: 0 0 30px #2c3e50;
+    /* text-shadow: 0px 0px 30px #FFD700; */
+    font-size: 450%;
+    text-align: center;
+    border-bottom: none;
+}
+#info{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    width:100%;
+}
+#info a.icon-big{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #fff;
+}
+#info a.icon-small{
+    display: none;
+}
+#info p{
+    margin-top: 10px;
+    font-size: 150%;
+    line-height: 200%;
+}
+
+/*
+    Menu
+ */
+
+section#main h2 a,
+header h2 a{
+    float: left;
+    color: #9b59b6;
+    padding-top: 20px;
+    font-size: 200%;
+    font-weight: bold;
+    text-decoration: none;
+}
+section#main h2 span,
+header h2 span {
+    /* color: #FFD700; */
+    color: #fff;
+    font-size: 100%;
+    font-weight: bold;
+}
+#ham span{
+    display: none;
+}
+#check{
+    display: none;
+}
+section#main nav ul,
+header nav ul{
+    list-style-type:none;
+    float:right;
+}
+section#main nav li,
+header nav li{
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+
+    padding: 0;
+    /* padding-right: 20px; */
+    border: 1px solid #9b59b6;
+    border-radius: 20px;
+}
+section#main nav li:hover,
+section#main nav li.active,
+header nav li:hover,
+header nav li.active{
+    background-color: #9b59b6;
+}
+
+section#main nav a,
+header nav a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.menu-inside,
+.menu-outside{
+    display: none;
+}
+.menu-inside-visible,
+.menu-outside-visible{
+    display: block;
+    background-color: #9b59b6;
+    margin: 0;
+    width: 100%;
+}
+.menu-inside-visible li,
+.menu-outside-visible li{
+    background-color: #9b59b6;
+    line-height: 150%;
+    padding-left: 20px;
+}
+.menu-inside-visible li:hover,
+.menu-outside-visible li:hover{
+    background-color: #7b3996;
+}
+.menu-outside-visible a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+    padding: 10px 20px;
+}
+.menu-outside-visible{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-bottom: 1px solid #ccc;
+}

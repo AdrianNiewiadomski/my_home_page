@@ -2,7 +2,6 @@
 <html lang="pl-PL">
     <head>
         <meta charset="utf-8">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Strona domowa Adriana Niewiadomskiego">
         <meta name="keywords" content="Adrian Niewiadomski, Niewiadomski, Adrian Niewiadomski homepage">
@@ -12,7 +11,7 @@
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="icon" href="img/favicon.ico" sizes="16x16">
         <script src="https://kit.fontawesome.com/64f7cfc6e1.js" crossorigin="anonymous"></script>
-        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/slajder.js" charset="utf-8"></script>
         <title>Adrian Niewiadomski | Projekty</title>
     </head>
@@ -99,8 +98,6 @@
                 <p>2019 &copy; Adrian Niewiadomski</p>
             </div>
         </footer>
-
-
 
         <script type="text/javascript">
             <?php

@@ -12,9 +12,17 @@ function zamienAktywnePrzyciski(poprzedni, numer) {
 
 function zmienSlajd(numer) {
     $("#slajder").fadeIn(500);
-    var slajderInnerHtml = document.getElementById('slajder').innerHTML;
-    slajderInnerHtml = slajderInnerHtml.replaceAll(/slajd\d/g, 'slajd'+numer);
-    document.getElementById("slajder").innerHTML = slajderInnerHtml;
+
+    var html = [
+        '<picture><source media="(min-width: 800px)" srcset="img/slajd',
+        '_very_large.png"><source media="(min-width: 500px)" srcset="img/slajd',
+        '_large.png"><source media="(min-width: 400px)" srcset="img/slajd',
+        '_medium.png"><img src="img/slajd',
+        '_small.png"></picture>'
+    ];
+
+    var nowyHtml = html.join(numer);
+    document.getElementById("slajder").innerHTML = nowyHtml;
 }
 
 function podmienLinkINazwe(numer) {
@@ -23,8 +31,9 @@ function podmienLinkINazwe(numer) {
 }
 
 function slajderDzialaj(numer) {
-    poprzedni = numer;
-    numer++;
+    var numer = parseInt(numer, 10)
+    var poprzedni = numer;
+    numer +=1;
     if (numer > 3) {
         numer = 1;
     }

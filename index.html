@@ -14,17 +14,17 @@
         <script src="js/menu_index.js" charset="utf-8"></script>
         <title>Adrian Niewiadomski | Strona domowa</title>
     </head>
-    <body onload="">
+    <body onload="ustawTytul();">
         <section id="main">
             <div class="container">
                 <h2><a href="index.html">&lt;<span>AN</span>&gt;</a></h2>
                 <nav>
-                    <label id="ham" for="check" onclick="przelaczTytul()">
+                    <label id="ham" for="check">
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
                     </label>
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check" onchange="przelaczTytul();">
                     <ul id="glowne-menu">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="o_mnie.html">O mnie</a></li>

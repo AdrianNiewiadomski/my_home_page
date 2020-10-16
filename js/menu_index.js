@@ -1,10 +1,10 @@
-var tytulWidoczny = true;
+function ustawTytul(){
+    document.getElementById("check").checked = false;
+}
 
 function przelaczTytul(){
-    console.log('przelaczTytul wywolane!');
-    console.log(tytulWidoczny);
-    tytulWidoczny = !tytulWidoczny;
-    if(tytulWidoczny){
+
+    if(document.getElementById("check").checked){
         document.getElementById('tytul').style.display = "none";
     }else{
         document.getElementById('tytul').style.display = "";

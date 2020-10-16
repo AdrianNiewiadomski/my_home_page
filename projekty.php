@@ -50,14 +50,16 @@
                  ?>
 
                 <div id="slajder">
-                    <picture>
-                        <?php
-                            echo '<source media="(min-width: 800px)" srcset="img/slajd'.$a.'_very_large.png">';
-                            echo '<source media="(min-width: 500px)" srcset="img/slajd'.$a.'_large.png">';
-                            echo '<source media="(min-width: 400px)" srcset="img/slajd'.$a.'_medium.png">';
-                            echo '<img src="img/slajd'.$a.'_small.png">';
-                        ?>
-                    </picture>
+                    <?php
+                        $html = array(
+                            '<picture><source media="(min-width: 800px)" srcset="img/slajd',
+                            '_very_large.png"><source media="(min-width: 500px)" srcset="img/slajd',
+                            '_large.png"><source media="(min-width: 400px)" srcset="img/slajd',
+                            '_medium.png"><img src="img/slajd',
+                            '_small.png"></picture>');
+
+                        echo implode(strval($a), $html);
+                    ?>
                 </div>
                 <div class="menu">
                     <?php
@@ -103,7 +105,8 @@
             <?php
                 echo 'var nazwy = ["'.implode('","', $names).'"];';
                 echo 'var linki = ["'.implode('","', $links).'"];';
-                echo 'setTimeout("ustawSlajd('.$a.')",4500);';
+                echo "var html = ['".implode("','", $html)."'];";
+                echo 'setTimeout("uruchomSlajder('.$a.')",4500);';
              ?>
         </script>
     </body>

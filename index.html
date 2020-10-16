@@ -11,14 +11,15 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/mediaQueries.css">
         <script src="https://kit.fontawesome.com/64f7cfc6e1.js" crossorigin="anonymous"></script>
+        <script src="js/menu_index.js" charset="utf-8"></script>
         <title>Adrian Niewiadomski | Strona domowa</title>
     </head>
-    <body>
+    <body onload="">
         <section id="main">
             <div class="container">
                 <h2><a href="index.html">&lt;<span>AN</span>&gt;</a></h2>
                 <nav>
-                    <label id="ham" for="check">
+                    <label id="ham" for="check" onclick="przelaczTytul()">
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
                         <span>&nbsp;</span>
@@ -33,7 +34,7 @@
                 </nav>
 
             </div>
-            <h1>Adrian Niewiadomski</h1>
+            <h1 id="tytul">Adrian Niewiadomski</h1>
 
             <div id="info">
 

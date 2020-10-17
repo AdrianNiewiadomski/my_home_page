@@ -1,0 +1,28 @@
+section .daty{
+    float: left;
+    width: 30%;
+    line-height: 200%;
+}
+section .firmy{
+    float: left;
+    width: 70%;
+    margin-bottom: 30px;
+    line-height: 200%;
+}
+section .firmy a,
+section p a{
+    padding:5px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+section#kontakt{
+    margin-bottom: 50px;
+}
+section#kontakt .daty{
+    text-align: right;
+    padding-right: 40px;
+}
+section#kontakt a:hover{
+    color: #e67e22;
+}

@@ -1,0 +1,57 @@
+section#sekcja-projekty .container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+section#sekcja-projekty #slajder,
+section#sekcja-projekty #slajder img{
+    display: block;
+    min-height: 508px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#sekcja-projekty .menu{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform:translate(-50%, 0);
+}
+section#sekcja-projekty a.dot{
+    background-color: #aaa;
+    display:block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    float:left;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+section#sekcja-projekty a.dot:hover,
+section#sekcja-projekty a.dot.activeButton{
+    background-color: #ccc;
+}
+section#sekcja-projekty a.button{
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color:  #9b59b6;
+    border: 1px solid #9b59b6;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 200%;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+section#sekcja-projekty a:hover{
+    background-color:  #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}

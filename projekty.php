@@ -7,6 +7,7 @@
         <meta name="keywords" content="Adrian Niewiadomski, Niewiadomski, Adrian Niewiadomski homepage">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/projekty.css">
         <link rel="stylesheet" href="css/mediaQueries.css">
         <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="icon" href="img/favicon.ico" sizes="16x16">

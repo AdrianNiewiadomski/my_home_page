@@ -153,9 +153,21 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 799px){
-
-    section#sekcja-projekty #slajder{
+    section#sekcja-projekty #slajder,
+    section#sekcja-projekty #slajder img{
         min-height: 318px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 499px){
+    section#sekcja-projekty #slajder,
+    section#sekcja-projekty #slajder img{
+        min-height: 254px;
+    }
+}
+@media only screen and (max-width: 399px){
+    section#sekcja-projekty #slajder,
+    section#sekcja-projekty #slajder img{
+        min-height: 191px;
     }
 }
 

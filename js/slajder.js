@@ -2,7 +2,7 @@ var timer1 = 0;
 var timer2 = 0;
 
 function schowajSlajd(){
-    $("#slajder").fadeOut(500);
+    $("#picture").fadeOut(500);
 }
 
 function zamienAktywnePrzyciski(poprzedni, numer){
@@ -11,9 +11,9 @@ function zamienAktywnePrzyciski(poprzedni, numer){
 }
 
 function zmienSlajd(numer){
-    $("#slajder").fadeIn(500);
+    $("#picture").fadeIn(500);
     var nowyHtml = window.html.join(numer);
-    document.getElementById("slajder").innerHTML = nowyHtml;
+    document.getElementById("picture").innerHTML = nowyHtml;
 }
 
 function podmienLinkINazwe(numer){

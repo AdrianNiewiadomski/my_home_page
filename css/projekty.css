@@ -4,6 +4,7 @@ section#sekcja-projekty .container{
     margin-bottom: 50px;
     position: relative;
 }
+/* section#sekcja-projekty #slajder{ */
 section#sekcja-projekty #slajder,
 section#sekcja-projekty #slajder img{
     display: block;

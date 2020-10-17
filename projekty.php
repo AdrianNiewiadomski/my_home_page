@@ -51,16 +51,18 @@
                  ?>
 
                 <div id="slajder">
-                    <?php
-                        $html = array(
-                            '<picture><source media="(min-width: 800px)" srcset="img/slajd',
-                            '_very_large.png"><source media="(min-width: 500px)" srcset="img/slajd',
-                            '_large.png"><source media="(min-width: 400px)" srcset="img/slajd',
-                            '_medium.png"><img src="img/slajd',
-                            '_small.png"></picture>');
+                    <picture id="picture">
+                        <?php
+                            $html = array(
+                                '<source media="(min-width: 800px)" srcset="img/slajd',
+                                '_very_large.png"><source media="(min-width: 500px)" srcset="img/slajd',
+                                '_large.png"><source media="(min-width: 400px)" srcset="img/slajd',
+                                '_medium.png"><img src="img/slajd',
+                                '_small.png">');
 
-                        echo implode(strval($a), $html);
-                    ?>
+                            echo implode(strval($a), $html);
+                        ?>
+                    </picture>
                 </div>
                 <div class="menu">
                     <?php

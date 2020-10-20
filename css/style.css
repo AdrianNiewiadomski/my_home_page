@@ -5,34 +5,31 @@
     midnightblue: #2c3e50;
     #e67e22;
  */
+/* background-color: #ee8; */
+/* background-color: #eee; */
+/* background-color: #ddd; */
+/* background-color: #ccc; */
 
 /* --------------------------------------------------------------------
     Globalne
 -------------------------------------------------------------------- */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif, Arial;
     font-size: 20px;
     font-weight: 300;
 }
-header{
-   color:#fff;
-   background-color:#000;
-   min-height: 90px;
-
+header {
+    color: #fff;
+    background-color: #000;
+    min-height: 90px;
 }
-body{
-    /* background-color: #ee8; */
-    /* background-color: #eee; */
-    /* background-color: #ddd; */
-    /* background-color: #ccc; */
-}
-section{
+section {
     margin-top: 50px;
 }
-section h1{
+section h1 {
     font-size: 200%;
     text-align: center;
     padding-top: 30px;
@@ -41,46 +38,45 @@ section h1{
     border-bottom: 3px solid #9b59b6;
     clear: both;
 }
-section h2{
+section h2 {
     font-size: 150%;
     padding-top: 10px;
     padding-bottom: 10px;
     clear: both;
     font-weight: 400;
 }
-.container{
-    width:80%;
+.container {
+    width: 80%;
     margin: auto;
-    overflow:hidden;
+    overflow: hidden;
 }
-.margin{
-    height:90px;
+.margin {
+    height: 90px;
 }
 
-footer{
-    color:#fff;
-    background-color:#000;
+footer {
+    color: #fff;
+    background-color: #000;
     min-height: 120px;
-    text-align:center;
+    text-align: center;
     padding-top: 20px;
     line-height: 200%;
 }
-footer a.icon-big{
+footer a.icon-big {
     color: #fff;
     margin-right: 20px;
     margin-left: 20px;
 }
-footer a.icon-small{
+footer a.icon-small {
     display: none;
 }
-
 
 /*
     Menu
  */
 
 section#main h2 a,
-header h2 a{
+header h2 a {
     float: left;
     color: #9b59b6;
     padding-top: 20px;
@@ -95,19 +91,19 @@ header h2 span {
     font-size: 100%;
     font-weight: bold;
 }
-#ham span{
+#ham span {
     display: none;
 }
-#check{
+#check {
     display: none;
 }
 section#main nav ul,
-header nav ul{
-    list-style-type:none;
-    float:right;
+header nav ul {
+    list-style-type: none;
+    float: right;
 }
 section#main nav li,
-header nav li{
+header nav li {
     float: left;
     margin-top: 20px;
     margin-right: 10px;
@@ -120,14 +116,14 @@ header nav li{
 section#main nav li:hover,
 section#main nav li.active,
 header nav li:hover,
-header nav li.active{
+header nav li.active {
     background-color: #9b59b6;
 }
 
 section#main nav a,
-header nav a{
+header nav a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     text-transform: uppercase;
     cursor: pointer;
     display: block;

@@ -214,9 +214,19 @@
         width: 50%;
         text-align: right;
     }
-
+    section#sekcja-projekty h1 {
+        padding-top: 10px;
+    }
+    section#sekcja-projekty {
+        margin-top: 0;
+        font-size: 150%;
+    }
     section#sekcja-projekty a.dot {
         margin-left: 10px;
         margin-right: 10px;
+    }
+    section#sekcja-projekty a.button {
+        font-size: 150%;
+        width: 250px;
     }
 }

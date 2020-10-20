@@ -1,106 +1,115 @@
 @media only screen and (max-width: 1000px) {
-    .container{
-        width:90%;
+    .container {
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    section#main{
+    section#main {
         margin-top: 0;
-        color:#fff;
-        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network_large.jpg);
+        color: #fff;
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url(../img/network_large.jpg);
         height: 100vh;
         background-position: center;
         background-size: cover;
     }
 
-    section#main h1{
+    section#main h1 {
         font-size: 300%;
     }
 
-    section#sekcja-projekty .container{
+    section#sekcja-projekty .container {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
     }
 }
 @media only screen and (max-width: 850px) {
-    .container{
-        width:100%;
+    .container {
+        width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
-    section#main{
+    section#main {
         margin-top: 0;
-        color:#fff;
-        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network_medium.jpg);
+        color: #fff;
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url(../img/network_medium.jpg);
         height: 100vh;
         background-position: center;
         background-size: cover;
     }
-    header.sticky{
-        height:90px;
+    header.sticky {
+        height: 90px;
         min-height: unset !important;
     }
-    #glowne-menu, section#main nav ul{
-    /* header nav ul{ */
+    #glowne-menu,
+    section#main nav ul {
+        /* header nav ul{ */
         display: none;
     }
-    #ham{
+    #ham {
         float: right;
         margin-right: 30px;
-        margin-top:30px;
-        margin-bottom:30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    #ham:after{
+    #ham:after {
         content: " ";
         clear: both;
     }
-    #ham span{
+    #ham span {
         background-color: #fff;
         display: block;
 
         margin-bottom: 6px;
         width: 43px;
         height: 6px;
-        cursor:pointer;
+        cursor: pointer;
         display: block;
     }
-    #ham span:last-child{
+    #ham span:last-child {
         margin-bottom: 0;
     }
-    #check:checked+#glowne-menu{
+    #check:checked + #glowne-menu {
         display: block;
         width: 100%;
     }
     header nav li,
-    section#main nav li{
+    section#main nav li {
         float: none;
         clear: both;
-        width:100%;
-        margin:0;
+        width: 100%;
+        margin: 0;
         border-radius: 0;
         border: 0;
         padding: 0;
         background-color: #7b3996;
     }
-    section#main nav li{
+    section#main nav li {
         margin-left: auto;
-        width:30%;
+        width: 30%;
         text-align: right;
     }
 
-    header nav li:hover{
+    header nav li:hover {
         background-color: #9b59b6;
     }
 
-    section{
+    section {
         padding-left: 10px;
         padding-right: 10px;
     }
     section.umiejetnosci .kolumna,
     section .daty,
-    section .firmy{
+    section .firmy {
         float: none;
         width: 100%;
     }
@@ -110,26 +119,37 @@
         width: 50%;
     }
 
-    section#kontakt .daty{
+    section#kontakt .daty {
         text-align: left;
     }
-    section#kontakt a{
+    section#kontakt a {
         padding-left: 0;
     }
 
-
-    section#sekcja-projekty a.dot {
-    	margin-left: 30px;
-    	margin-right: 30px;
+    section#sekcja-projekty .menu {
+        top: 90%;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+    }
+    section#sekcja-projekty .dot {
+        display: block;
+        width: 20%;
+    }
+    section#sekcja-projekty .dot a {
+        margin-left: auto;
+        margin-right: auto;
+        width: 24px;
+        height: 24px;
     }
 
     #info {
         margin-bottom: 0;
     }
-    #info a.icon-big{
+    #info a.icon-big {
         display: none;
     }
-    #info a.icon-small{
+    #info a.icon-small {
         display: inline;
         margin-left: 10px;
         margin-right: 10px;
@@ -141,10 +161,10 @@
         line-height: 150%;
     }
 
-    footer a.icon-big{
-        display:none;
+    footer a.icon-big {
+        display: none;
     }
-    footer a.icon-small{
+    footer a.icon-small {
         display: inline;
         margin-left: 10px;
         margin-right: 10px;
@@ -152,36 +172,39 @@
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 799px){
+@media only screen and (min-width: 500px) and (max-width: 799px) {
     section#sekcja-projekty #slajder,
-    section#sekcja-projekty #slajder img{
+    section#sekcja-projekty #slajder img {
         min-height: 318px;
     }
 }
-@media only screen and (min-width: 400px) and (max-width: 499px){
+@media only screen and (min-width: 400px) and (max-width: 499px) {
     section#sekcja-projekty #slajder,
-    section#sekcja-projekty #slajder img{
+    section#sekcja-projekty #slajder img {
         min-height: 254px;
     }
 }
-@media only screen and (max-width: 399px){
+@media only screen and (max-width: 399px) {
     section#sekcja-projekty #slajder,
-    section#sekcja-projekty #slajder img{
+    section#sekcja-projekty #slajder img {
         min-height: 191px;
     }
 }
 
-
 @media only screen and (max-width: 600px) {
-    section#main{
+    section#main {
         margin-top: 0;
-        color:#fff;
-        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network_small.jpg);
+        color: #fff;
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url(../img/network_small.jpg);
         height: 100vh;
         background-position: center;
         background-size: cover;
     }
-    section#main h1{
+    section#main h1 {
         font-size: 250%;
     }
     section#main nav li {
@@ -191,7 +214,7 @@
     }
 
     section#sekcja-projekty a.dot {
-    	margin-left: 10px;
-    	margin-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

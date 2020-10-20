@@ -70,7 +70,6 @@
                 </picture>
             </div>
             <div class="menu">
-                <div class="dot">&nbsp;</div>
                 <?php
                 for ($x = 1; $x <= 3; $x++) {
                     echo '<div class="dot"><a id="' . $x . '" class="';
@@ -79,7 +78,6 @@
                     echo '" href="projekty.php?a=' . $x . '"></a></div>';
                 }
                 ?>
-                <div class="dot">&nbsp;</div>
             </div>
         </div>
         <?php

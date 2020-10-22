@@ -16,19 +16,33 @@ class Model{
     }
 
     addVertice(line) {        
-        this.vertices.push([
-            parseFloat(line.split(' ')[1]), 
-            parseFloat(line.split(' ')[2]), 
-            parseFloat(line.split(' ')[3])
-        ]);
+        // this.vertices.push([
+        //     parseFloat(line.split(' ')[1]), 
+        //     parseFloat(line.split(' ')[2]), 
+        //     parseFloat(line.split(' ')[3])
+        // ]);
+        this.vertices.push(
+            new THREE.Vector3(
+                parseFloat(line.split(' ')[1]), 
+                parseFloat(line.split(' ')[2]), 
+                parseFloat(line.split(' ')[3])
+            )
+        );
     }
 
     addFace(line) {
-        this.faces.push([
-            parseInt(line.split(' ')[1]), 
-            parseInt(line.split(' ')[2]), 
-            parseInt(line.split(' ')[3])
-        ]);
+        // this.faces.push([
+        //     parseInt(line.split(' ')[1])-1, 
+        //     parseInt(line.split(' ')[2])-1, 
+        //     parseInt(line.split(' ')[3])-1
+        // ]);
+        this.faces.push(
+            new THREE.Face3(
+                parseInt(line.split(' ')[1])-1, 
+                parseInt(line.split(' ')[2])-1, 
+                parseInt(line.split(' ')[3])-1
+            )
+        );
     }
 
     static createModelFromText(text) {

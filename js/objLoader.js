@@ -8,6 +8,27 @@ class OBJLoader {
         var name = path + '/3d_models/litera_L.txt';
         return name;
     }
+
+    static addModelToScene(scene, model) {
+        var geom = new THREE.Geometry(); 
+        var v1 = new THREE.Vector3(0,0,0);
+        var v2 = new THREE.Vector3(0,500,0);
+        var v3 = new THREE.Vector3(0,500,500);
+
+        geom.vertices.push(v1);
+        geom.vertices.push(v2);
+        geom.vertices.push(v3);
+
+        geom.faces.push( new THREE.Face3( 0, 1, 2 ) );
+        geom.computeFaceNormals();
+
+        var object = new THREE.Mesh( geom, new THREE.MeshNormalMaterial() );
+        
+        object.position.z = -100;//move a bit back - size of 500 is a bit big
+        object.rotation.y = -Math.PI * .5;//triangle is pointing in depth, rotate it -90 degrees on Y
+        
+        scene.add(object);
+    }
     
     static loadModel(scene) {
         var name = this.getFileName();
@@ -21,9 +42,8 @@ class OBJLoader {
                 console.log(tekst);
 
 
-                Model.createModelFromText(tekst);
-                // modele = wczytajObiekt(tekst, nazwa);
-                // dodajdoSceny(modele);
+                var model = Model.createModelFromText(tekst);
+                OBJLoader.addModelToScene(scene, model);
             }
         };
     

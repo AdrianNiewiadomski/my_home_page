@@ -26,13 +26,13 @@ function inicjujAnimacje(){
     mesh1.position.set(0,0,-300);
     scene.add(mesh1);
 
-    var loader = new THREE.OBJLoader(); 
-    loader.load(
-        //  'untitled.obj',
-        '3d_models/name.obj',
-         function ( object ) {
-            scene.add( object );
-    });
+    // var loader = new THREE.OBJLoader(); 
+    // loader.load(
+    //     //  'untitled.obj',
+    //     '3d_models/name.obj',
+    //      function ( object ) {
+    //         scene.add( object );
+    // });
 
 
 

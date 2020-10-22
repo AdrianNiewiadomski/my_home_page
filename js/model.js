@@ -32,10 +32,10 @@ class Model{
     }
 
     static createModelFromText(text) {
-    // wczytajObiekt(linia, nazwa){
+
         var model = new Model();    
     
-        text = text.replace(/  /g, ' ')
+        text = text.replace(/  /g, ' ');
         var lines = text.split("\n");
 
         lines.forEach(element => {
@@ -48,42 +48,6 @@ class Model{
         });  
         
         console.log(model);
-
-        // for(var i=0; i<lines.length; i++){
-    
-        //     if((linijki[i].charAt(0) == 'v') && (linijki[i].charAt(1) == ' ')){
-    
-        //         var wierzcholek=[];
-        //         var text = linijki[i].replace(/  /g,' ');
-    
-        //         wierzcholek[0]=parseFloat(text.split(" ")[1]);
-        //         wierzcholek[1]=parseFloat(text.split(" ")[2]);
-        //         wierzcholek[2]=parseFloat(text.split(" ")[3]);
-    
-        //         if(wierzcholek[0]>max[0]) max[0]=wierzcholek[0];
-        //         if(wierzcholek[1]>max[1]) max[1]=wierzcholek[1];
-        //         if(wierzcholek[2]>max[2]) max[2]=wierzcholek[2];
-        //         if(wierzcholek[0]<min[0]) min[0]=wierzcholek[0];
-        //         if(wierzcholek[1]<min[1]) min[1]=wierzcholek[1];
-        //         if(wierzcholek[2]<min[2]) min[2]=wierzcholek[2];
-    
-        //         wierzcholki.push(wierzcholek);
-        //     }
-        //     if((linijki[i].charAt(0) == 'f') && (linijki[i].charAt(1) == ' ')){
-    
-        //         var text = linijki[i].replace(/  /g,' ');
-        //         var sciana = [];
-    
-        //         sciana[0]=parseInt(text.split(" ")[1]);
-        //         sciana[1]=parseInt(text.split(" ")[2]);
-        //         sciana[2]=parseInt(text.split(" ")[3]);
-    
-        //         sciany.push(sciana);
-        //     }
-        // }
-    
-        // var model = [];
-        // model.push(new Model(nazwa, 999, "#ffffff", wierzcholki, sciany, min, max));
-        // return model;
+        return model;
     }
 }

@@ -5,7 +5,8 @@ class OBJLoader {
     static getFileName(){
         var url = window.location.href;
         var path = url.substr(0, url.lastIndexOf('/'));
-        var name = path + '/3d_models/litera_L.txt';
+        // var name = path + '/3d_models/litera_L.txt';
+        var name = path + '/3d_models/name.obj';
         return name;
     }
 
@@ -14,22 +15,12 @@ class OBJLoader {
 
         geom.vertices = model.vertices;
         geom.faces = model.faces;
-        // var v1 = new THREE.Vector3(0,0,0);
-        // var v2 = new THREE.Vector3(0,50,0);
-        // var v3 = new THREE.Vector3(0,50,50);
-
-        // geom.vertices.push(v1);
-        // geom.vertices.push(v2);
-        // geom.vertices.push(v3);
-
-        // geom.faces.push( new THREE.Face3( 0, 1, 2 ) );
         geom.computeFaceNormals();
 
         var object = new THREE.Mesh( geom, new THREE.MeshNormalMaterial() );
         
-        object.position.z = -10;//move a bit back - size of 500 is a bit big
-        // object.rotation.y = -Math.PI * .5;//triangle is pointing in depth, rotate it -90 degrees on Y
-        
+        object.position.z = -10;
+        object.rotation.x = Math.PI * 0.5;
         scene.add(object);
     }
     

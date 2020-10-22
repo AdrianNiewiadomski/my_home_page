@@ -26,36 +26,7 @@ function inicjujAnimacje(){
     mesh1.position.set(0,0,-300);
     scene.add(mesh1);
 
-    // var loader = new THREE.OBJLoader(); 
-    // loader.load(
-    //     //  'untitled.obj',
-    //     '3d_models/name.obj',
-    //      function ( object ) {
-    //         scene.add( object );
-    // });
-
-
-
-
-
-    // instantiate the loader
-    // let loader = new OBJLoader2();
-
-    // // function called on successful load
-    // function callbackOnLoad ( object3d ) {
-    // 	scene.add( object3d );
-    // }
-
-    // // load a resource from provided URL synchronously
-    // loader.load( 'untitled.obj', callbackOnLoad, null, null, null );
-
-
-
-    // var THREE = require('three');
-    // var OBJLoader = require('three-obj-loader');
-    // OBJLoader(THREE);
-     
-    // console.log(typeof THREE.OBJLoader);
+    OBJLoader.loadModel(scene);
 
     requestAnimationFrame( render );
 }

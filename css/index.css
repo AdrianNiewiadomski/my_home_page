@@ -1,43 +1,65 @@
 /* --------------------------------------------------------------------
     strona home
 -------------------------------------------------------------------- */
-section#main{
-    margin-top: 0;
-    color:#fff;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-section#main h1{
+section#main {
+    margin-top: 0;
+    color: #fff;
+    /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/network.jpg); */
+    height: 100vh;
+    /* background-position: center;
+    background-size: cover; */
+}
+section#main .container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: fixed;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1;
+}
+section#main h1 {
     /* position: absolute; */
     position: fixed;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     /* text-shadow: 0px 0px 30px #000; */
     text-shadow: 0 0 30px #2c3e50;
     /* text-shadow: 0px 0px 30px #FFD700; */
     font-size: 450%;
     text-align: center;
     border-bottom: none;
+    z-index: 1;
 }
-#info{
+section#main canvas {
+    /* margin: auto; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#info {
     position: fixed;
     bottom: 0;
     margin-bottom: 20px;
     text-align: center;
-    width:100%;
+    width: 100%;
 }
-#info a.icon-big{
+#info a.icon-big {
     margin-left: 30px;
     margin-right: 30px;
     color: #fff;
 }
-#info a.icon-small{
+#info a.icon-small {
     display: none;
 }
-#info p{
+#info p {
     margin-top: 10px;
     font-size: 150%;
     line-height: 200%;

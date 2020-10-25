@@ -26,7 +26,7 @@ function inicjujAnimacje(){
     mesh1.position.set(0,0,-300);
     scene.add(mesh1);
 
-    OBJLoader.loadModel(scene);
+    // OBJLoader.loadModel(scene);
 
     requestAnimationFrame( render );
 }

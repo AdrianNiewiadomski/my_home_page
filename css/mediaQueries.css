@@ -8,11 +8,11 @@
     section#main {
         margin-top: 0;
         color: #fff;
-        background-image: linear-gradient(
+        /* background-image: linear-gradient(
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)
             ),
-            url(../img/network_large.jpg);
+            url(../img/network_large.jpg); */
         height: 100vh;
         background-position: center;
         background-size: cover;
@@ -40,11 +40,11 @@
     section#main {
         margin-top: 0;
         color: #fff;
-        background-image: linear-gradient(
+        /* background-image: linear-gradient(
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)
             ),
-            url(../img/network_medium.jpg);
+            url(../img/network_medium.jpg); */
         height: 100vh;
         background-position: center;
         background-size: cover;
@@ -84,6 +84,10 @@
     #check:checked + #glowne-menu {
         display: block;
         width: 100%;
+    }
+    section#main {
+        padding-left: 0;
+        padding-right: 0;
     }
     header nav li,
     section#main nav li {
@@ -200,11 +204,11 @@
     section#main {
         margin-top: 0;
         color: #fff;
-        background-image: linear-gradient(
+        /* background-image: linear-gradient(
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)
             ),
-            url(../img/network_small.jpg);
+            url(../img/network_small.jpg); */
         height: 100vh;
         background-position: center;
         background-size: cover;

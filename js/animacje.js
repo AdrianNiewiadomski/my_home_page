@@ -3,15 +3,23 @@ var camera;
 var renderer;
 var mesh1;
 
+function resize() {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+}
+
 function inicjujAnimacje(){
 
-    renderer = new THREE.WebGLRenderer({canvas:document.getElementById("my_canvas"),antialias:true});
+    renderer = new THREE.WebGLRenderer({canvas:document.getElementById('my_canvas'),antialias:true});
     renderer.setClearColor(0x000000);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize( window.innerWidth, window.innerHeight );
 
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(75,  window.innerWidth/window.innerHeight, 0.1, 1000);
+
+    window.addEventListener('resize', resize);
 
     var light = new THREE.PointLight(0xffffff, 1);
     light.position.set( 0, 0, 50 );

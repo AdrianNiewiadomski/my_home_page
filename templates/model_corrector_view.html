@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="pl">
+	<head>
+		<meta charset="UTF-8">
+		<title>Metody generowania przekrojow pionowych obiektow 3D</title>
+
+
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/algorithms/menuGlowne.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/algorithms/style.css') }}">
+		
+		<script type="text/javascript" src="{{ url_for('static', filename='js/lib/helper_functions.js') }}"></script>
+
+		{% if files %}
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/FileSaver.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/three.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/TrackballControls.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/dat.gui.min.js') }}"></script>
+
+			<script type="text/javascript" src="{{ url_for('static', filename='js/corrector/guiKorektor.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/corrector/korektor.js') }}"></script>
+		{% endif %}
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/algorithms/datGuiStyle.css') }}">
+	</head>
+
+	<body>
+		<div class="body">
+			<div id="navbar">
+				<a href="/algorithms" class="nav-item">Home</a>
+				<a href="/cross_section" class="nav-item">3D models cross-sections</a>
+				<a href="/model_corrector" class="nav-item active">Correction of 3D models</a>				
+			</div>
+
+			<div id="content">
+				<div id="canvas">
+					<canvas id="my_canvas"></canvas>
+				</div>
+
+				<form action="" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="nazwa" id="nazwa" value="">
+
+					<input type="hidden" name="wierzcholki" 	id="wierzcholki" 		maxlength="524288" value="">
+					<input type="hidden" name="sciany" 			id="sciany" 			maxlength="524288" value="">
+					<input type="hidden" name="wektoryNormalne" id="wektoryNormalne"	maxlength="5242880" value="">
+
+					<input type="hidden" name="wiadomosc" 	id="wiadomosc"	maxlength="524" value="">
+				</form>
+
+				<script type="text/javascript">
+					var pliki = [];
+					var sciezka;
+					var sciezka2;
+
+					{%  for file in files  %}
+						pliki.push("{{ file }}");
+					{%  endfor  %}
+					sciezka = "{{ url_for('static', filename='_models') }}/";
+					sciezka2 = "{{ url_for('static', filename='_incorrect_models') }}/";
+				
+					var scene, camera, renderer, controls;
+					inicjujScene(); // from korektor.js
+					var model = new Model(); // from korektor.js
+
+					{% if chosen_file == "text.txt" %}
+						model.wczytajZServera(sciezka+"text.txt"); // from korektor.js
+					{% else %}
+						model.wczytajZServera(sciezka2+"{{ chosen_file }}");
+						// model.wczytajZServeraIPopraw(sciezka2+"{{ chosen_file }}"); // from korektor.js
+					{% endif %}
+
+					displayGUI("Cube"); // from guiKorektor.js
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

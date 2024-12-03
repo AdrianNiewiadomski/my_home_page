@@ -1,4 +1,2 @@
-.git
-download/
-Snake/
-lib/
+.idea
+__pycache__/

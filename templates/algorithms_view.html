@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Metody generowania przekrojow pionowych obiektow 3D</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/algorithms/style.css') }}">
+</head>
+
+	<body style="margin: 20px;">
+
+		<div class="main">
+
+			<h1>Methods of generating vertical cross sections of 3D objects</h1>
+
+			<h3>Bachelor of Engineering thesis | Author: Adrian Niewiadomski | Supervisor: Krzysztof Wróbel PhD</h3>
+
+			<br>
+
+			<p>
+				As part of the thesis, a theoretical solution was proposed and the implementation of the algorithms was presented solving the following problems occurring in computer graphics:
+
+				<ul>
+					<li>
+						create correctly displayed vertical sections of 3D objects,
+					</li>
+					<br>
+					<li>
+						display the faces of a 3D object by correcting the order of vertices in the faces (and thus normal vectors).
+					</li>
+				</ul>
+			</p>
+
+			<p>
+				The application was written in JavaScript using the Three.js library. The backend has been written in Python (Flask).
+			</p>
+
+			<br><br>
+
+			<h2>Please, select an algorithm</h2>
+
+			<a href="/cross_section" class="pure-button button-success" style="width:90%;margin:0 auto;display:block;">Creating cross-sections of 3D graphics objects</a>
+			<br>
+			<a href="/model_corrector" class="pure-button button-error" style="width:90%;margin:0 auto;display:block;">Correction of 3D models</a>		
+			<br>
+
+			<h2>Download the thesis (in Polish)</h2>
+			<a href="{{ url_for('static', filename='download/przekroje.pdf') }}" target="_blank" class="pure-button" style="width:90%;margin:0 auto;display:block; background-color: rgb(66, 184, 221);">
+				Metody generowania przekrojow pionowych obiektow 3D
+			</a>
+			<br/>
+		</div>
+
+	</body>
+</html>

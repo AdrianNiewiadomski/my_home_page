@@ -9,7 +9,7 @@ function resize() {
     camera.updateProjectionMatrix();
 }
 
-function inicjujAnimacje(){
+function inicjujAnimacje(file){
 
     renderer = new THREE.WebGLRenderer({canvas:document.getElementById('my_canvas'),antialias:true});
     renderer.setClearColor(0x000000);
@@ -25,7 +25,7 @@ function inicjujAnimacje(){
     light.position.set( 0, 0, 50 );
     scene.add(light);
 
-    var texture = new THREE.TextureLoader().load('img/2k_earth_daymap.jpg');
+    var texture = new THREE.TextureLoader().load(file);
     var material = new THREE.MeshLambertMaterial();
     material.map = texture;
     var geometry1 = new THREE.SphereGeometry(150, 40, 40);

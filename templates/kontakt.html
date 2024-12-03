@@ -6,18 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Strona domowa Adriana Niewiadomskiego">
         <meta name="keywords" content="Adrian Niewiadomski, Niewiadomski, Adrian Niewiadomski homepage">
-        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link rel="icon" href="img/favicon.ico" sizes="16x16">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/kontakt.css">
-        <link rel="stylesheet" href="css/mediaQueries.css">
+        
+        <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />-->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" sizes="16x16">
+        
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/kontakt.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaQueries.css') }}">
+        
         <script src="https://kit.fontawesome.com/64f7cfc6e1.js" crossorigin="anonymous"></script>
+        
         <title>Adrian Niewiadomski | Kontakt</title>
     </head>
     <body>
         <header>
             <div class="container">
-                <h2><a href="index.html">&lt;<span>AN</span>&gt;</a></h2>
+                <h2><a href="home">&lt;<span>AN</span>&gt;</a></h2>
                 <nav>
                     <label id="ham" for="check">
                         <span>&nbsp;</span>
@@ -26,10 +31,10 @@
                     </label>
                     <input type="checkbox" id="check">
                     <ul id="glowne-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="o_mnie.html">O mnie</a></li>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="o_mnie">O mnie</a></li>
                         <li><a href="projekty.php">Projekty</a></li>
-                        <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                        <li class="active"><a href="kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
 

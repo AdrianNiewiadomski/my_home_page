@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang ="pl">
+	<head>
+		<meta charset="UTF-8">
+		<title>Metody generowania przekrojow pionowych obiektow 3D</title>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/algorithms/menuGlowne.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/algorithms/style.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename='js/lib/helper_functions.js') }}"></script>
+
+		{% if files %}
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/three.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/dat.gui.min.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/binaryReader.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/g3dReader.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/lib/TrackballControls.js') }}"></script>
+
+			<script type="text/javascript" src="{{ url_for('static', filename='js/cross_section/gui.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/cross_section/main.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/cross_section/model.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/cross_section/odcinek.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/cross_section/normalnyDoWierzcholka.js') }}"></script>
+		{% endif %}
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/algorithms/datGuiStyle.css') }}">
+	</head>
+
+	<body>
+		<div class="body">
+			<div id="navbar">
+				<a href="/algorithms" class="nav-item">Home</a>
+				<a href="/cross_section" class="nav-item active">3D models cross-sections</a>
+				<a href="/model_corrector" class="nav-item">Correction of 3D models</a>
+			</div>
+
+			<div id="content">
+				<div id="canvas">
+					<canvas id="my_canvas"></canvas>
+				</div>
+
+				<script type="text/javascript">
+
+					var xro, yro, zro;
+					var pliki = [];
+					var sciezka;
+
+					{%  for file in files  %}
+						pliki.push("{{ file }}");
+					{%  endfor  %}
+					sciezka = "{{ url_for('static', filename='_models') }}/";
+					
+					displayGUI(); // from gui.js
+					inicjujScene(); // from main.js
+					animate(); // from main.js
+
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

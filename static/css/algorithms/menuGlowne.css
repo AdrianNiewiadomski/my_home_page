@@ -1,0 +1,109 @@
+html, body{
+height: 100%;
+margin: 0;
+}
+
+.body{
+    height: 100%;
+}
+
+#navbar{
+    line-height: 68px;
+    background-color: #222;
+    height: 68px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-item{
+    vertical-align: middle;
+    font-size: 20px;
+	font-weight: bold;
+    display:inline-block;
+
+    /* display: block; */
+    float: left;
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    color: #838383;
+
+}
+
+.nav-item:hover{
+background-color: #444;
+color: #fff;
+}
+
+.active{
+    color: #F4EA28;
+}
+
+.logout{
+    float: right;
+    height: 100%;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /* z-index: -1; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#canvas{
+    height: 100%;
+    width: 100%;
+    /* z-index: 0; */
+
+}
+
+#my_canvas{
+    height: 100%;
+    width: 100%;
+}
+
+.komentarze{
+    /* z-index: 1; */
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+
+}
+
+.error_comments{
+    color: red;
+}
+
+.info_comments{
+    color: green;
+}
+
+#menuEdytora{
+    overflow: hidden;
+    color: white;
+    position: absolute;
+    width: 100%;
+    /* top: 90%; */
+    bottom: 10px;
+    left: 26%;
+    margin: 0;
+    /* z-index: 2; */
+}
+
+.person-list{
+    position: absolute;
+    top: 68px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+a{
+    text-decoration: none;
+}

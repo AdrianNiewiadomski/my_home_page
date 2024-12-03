@@ -6,19 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Strona domowa Adriana Niewiadomskiego">
         <meta name="keywords" content="Adrian Niewiadomski, Niewiadomski, Adrian Niewiadomski homepage">
-        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link rel="icon" href="img/favicon.ico" sizes="16x16">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/o_mnie.css">
-        <link rel="stylesheet" href="css/mediaQueries.css">
-        <script src="https://kit.fontawesome.com/64f7cfc6e1.js" crossorigin="anonymous"></script>
-        <script src="js/menu_o_mnie.js" charset="utf-8"></script>
+
+        <!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />-->
+        <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" sizes="16x16">
+        
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/o_mnie.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaQueries.css') }}">
+        
+		<script src="https://kit.fontawesome.com/64f7cfc6e1.js" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='js/menu_o_mnie.js') }}" charset="utf-8"></script>
         <title>Adrian Niewiadomski | O mnie</title>
     </head>
     <body>
         <header class="sticky">
             <div class="container">
-                <h2><a href="index.html">&lt;<span>AN</span>&gt;</a></h2>
+                <h2><a href="home">&lt;<span>AN</span>&gt;</a></h2>
                 <nav>
                     <label id="ham" for="check">
                         <span>&nbsp;</span>
@@ -27,7 +30,7 @@
                     </label>
                     <input type="checkbox" id="check">
                     <ul id="glowne-menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home">Home</a></li>
                         <li class="active" onclick="przelaczMenu();">
                             <a>O mnie</a>
                             <ul id="menu-inside" class="menu-inside">
@@ -40,7 +43,7 @@
                             </ul>
                         </li>
                         <li><a href="projekty.php">Projekty</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
 

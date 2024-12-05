@@ -34,7 +34,7 @@ section#sekcja-projekty .dot a {
 }
 section#sekcja-projekty .dot a:hover,
 section#sekcja-projekty .dot a.activeButton {
-    background-color: #ddd;
+    background-color: #eee;
 }
 section#sekcja-projekty a.button {
     display: block;

@@ -10,9 +10,12 @@ function zamienAktywnePrzyciski(poprzedni, numer){
     document.getElementById(numer).classList.add('activeButton');
 }
 
-function zmienSlajd(numer){
+function zmienSlajd(poprzedni, numer){
     $("#picture").fadeIn(500);
-    var nowyHtml = window.html.join(numer);
+    //var nowyHtml = window.html.join("");//.join(numer);
+    var nowyHtml = document.getElementById("picture").innerHTML;
+    var regex = new RegExp(poprzedni, "g");
+    nowyHtml = nowyHtml.replace(regex, numer);
     document.getElementById("picture").innerHTML = nowyHtml;
 }
 
@@ -28,7 +31,7 @@ function slajderDzialaj(numer){
         numer = 1;
     }
 
-    zmienSlajd(numer);
+    zmienSlajd(poprzedni, numer);
     zamienAktywnePrzyciski(poprzedni, numer);
     podmienLinkINazwe(numer);
 
